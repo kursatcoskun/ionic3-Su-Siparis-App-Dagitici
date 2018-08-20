@@ -1,0 +1,7 @@
+{
+  "name": "suSiparisAppKurumsal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
