@@ -1,0 +1,30 @@
+page-welcome {
+    @font-face{
+        font-family: centurygothic;
+        src: url(../../../www/assets/fonts/centurygothic.ttf);
+    }
+
+   
+
+.bgpage{
+    background: url(../../assets/imgs/02gausswater.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn-bt1{
+    margin-top:15%;
+    text-transform: none;
+    background: #00aeff;
+}
+.img-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22%;
+}
+.text-input{
+    color: black;
+}
+
+}

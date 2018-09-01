@@ -1,0 +1,40 @@
+<!--
+  Generated template for the NavigasyonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center;">Navigasyon</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="bg">
+    
+
+      <div #map id="map"></div>
+      <button ion-button full icon-left (click)="startTracking()" *ngIf="!isTracking">
+          <ion-icon name="locate"></ion-icon>
+          Dağıtıma Başla
+        </button>
+  
+        <button ion-button full color="danger" icon-left (click)="stopTracking()" *ngIf="isTracking">
+          <ion-icon name="hand"></ion-icon>
+          Dağıtımı Bitir
+        </button>
+
+<ion-list>
+  <ion-list-header>Önceki Dağıtımlar
+
+      <button ion-button clear item-end (click)="deleteHistoryRoute(route)">Dağıtımları Sil</button>
+  </ion-list-header>
+  <ion-item *ngFor="let route of previousTracks">
+    {{ route.finished | date }}, {{ route.path.length }} Noktalar
+    <button ion-button clear item-end (click)="showHistoryRoute(route.path)">Dağıtımı Göster</button>
+    
+  </ion-item>
+</ion-list>
+</ion-content>

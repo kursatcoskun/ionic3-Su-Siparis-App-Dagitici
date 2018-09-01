@@ -1,0 +1,33 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content class="bgpage" padding>
+
+    <img class="img-logo" src="../../assets/imgs/damacana3.png">
+
+    <ion-item style="margin-top: 10%;" color="seffaf" class="text-input">
+        <ion-icon color="dark" item-start name="md-person"></ion-icon>
+      <ion-input [(ngModel)]="telno" type="text" placeholder="Kullanıcı Adı"></ion-input>
+    </ion-item>
+
+    <ion-item color="seffaf" class="text-input">
+        <ion-icon color="dark" item-start name="md-key"></ion-icon>
+        <ion-input [(ngModel)]="password" type="text" placeholder="Şifre"></ion-input>
+      </ion-item>
+  
+      <button class="btn-bt1" ion-button full (click)="girisYapClicked()">
+        Giriş Yap
+      </button>
+  
+    <ion-label style="text-align: center; font-size: 0.8em; margin-top: 10%;">PİTON Ar-Ge ve Yazılım Evi  &copy; 2018</ion-label>
+
+</ion-content>
