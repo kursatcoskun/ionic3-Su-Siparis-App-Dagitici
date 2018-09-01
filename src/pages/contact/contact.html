@@ -1,17 +1,48 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-title class="profil-header">Profilim</ion-title>
+   <br>
+    <img src="../../assets/imgs/profil.gif" class="pp-im">
+    <ion-label class="profile-name">Kürşat Coşkun</ion-label>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+    <ion-buttons class="button-p">
+        <button ion-button icon-end>
+          Düzenle
+          <ion-icon name="ios-create-outline"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons class="button-p2">
+          <button ion-button icon-end>
+            Çıkış Yap
+            <ion-icon name="ios-log-out-outline"></ion-icon>
+          </button>
+        </ion-buttons>
+  </ion-navbar>
+
+  
+
+</ion-header>
+<ion-content class="bgpage">
+
+    <ion-card class="profil-card">
+        <ion-card-header class="text-h">
+            
+            <ion-icon name="md-mail" item-start></ion-icon>
+          İletişim Bilgilerim
+        </ion-card-header>
+        <ion-card-content class="txt-content">
+          Telefon Numarası: 0544 459 83 11
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="profil-card">
+          <ion-card-header class="text-h">
+              
+              <ion-icon name="md-car" item-start></ion-icon>
+            Dağıtıcı Araç Plakası
+          </ion-card-header>
+          <ion-card-content class="txt-content">
+            26 SU 026
+          </ion-card-content>
+        </ion-card>
+  
 </ion-content>

@@ -38,8 +38,51 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  seffaf: rgba(0, 0, 0, 0.0),
+  gri: grey,
+  turkuaz: #00aeff,
+  turuncu: orange
 );
+
+$tabs-background: #00aeff;
+$tabs-ios-tab-icon-color:white;
+$tabs-ios-tab-text-color: white;
+$tabs-ios-tab-text-color-active:black;
+$tabs-ios-tab-icon-color-active: black;
+$tabs-ios-tab-font-size: 13px;
+$toolbar-md-button-color: white;
+$toolbar-ios-title-text-color: white;
+$toolbar-ios-button-color: white;
+
+$toolbar-md-title-text-color: white;
+$tabs-md-tab-text-color:white;
+$tabs-md-tab-icon-color:white;
+$tabs-md-tab-text-color-active:black;
+$tabs-md-tab-icon-color-active: black;
+
+$segment-button-ios-text-color: white;
+$segment-button-ios-background-color: white;
+$segment-button-ios-background-color-activated: black;
+
+$segment-button-md-opacity: 1;
+$segment-button-md-text-color-activated: black;
+
+$font-family-md-base: "centurygothic";
+$font-family-ios-base:"centurygothic";
+
+$searchbar-ios-background-color: rgba(0, 0, 0, 0.1);
+
+$text-input-placeholder-color: black;
+$label-md-text-color: black;
+
+@font-face{
+  font-family: centurygothic;
+  src: url(../../www/assets/fonts/centurygothic.ttf), url(../../www/assets/fonts/centurygothic.woff);
+
+}
+$font-family-md-base: "centurygothic";
+$font-family-ios-base: "centurygothic";
 
 
 // App iOS Variables

@@ -1,11 +1,123 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+  <ion-navbar class="navbar">
+    <ion-title class="textTitle">Siparişler</ion-title>
+    
+    
   </ion-navbar>
+  <ion-segment mode="md" [(ngModel)]="siparisler">
+    <ion-segment-button class="bt" value="bekleyen">
+      Bekleyenler
+    </ion-segment-button>
+    <ion-segment-button value="onaylanan">
+      Onaylananlar
+    </ion-segment-button>
+    <ion-segment-button value="teslimedilen">
+      Teslim Edilenler
+    </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="bgpage" padding>
 
+    <div [ngSwitch]="siparisler">
+        <ion-list *ngSwitchCase="'bekleyen'">
+            <ion-card class="urunler-card">
+                <button mode="md" ion-item (click)="bekleyenClicked()">
+                  <ion-card-header class="text-h">
+                    Kürşat Coşkun
+                  </ion-card-header>
+                  <ion-card-content class="txt">
+                      <ion-icon name="md-book" item-start></ion-icon>
+                      Mehmet Osman Sk. 71/10<br>
+                      <ion-icon name="md-list-box" item-start></ion-icon>
+                      12 L Damacana Su X 1<br>
+                      <ion-icon color="seffaf" name="md-list-box" item-start></ion-icon>
+                      5 L Pet Şişe Su X 3<br>
+                      <ion-icon name="md-card" item-start></ion-icon>
+                     Ödeme Şekli:Kapıda  Ödeme<br>
+                     <ion-icon name="md-timer" item-start></ion-icon>
+                     Sipariş Tarihi: Hemen
+                  </ion-card-content>
+                  <ion-card-content style="color:red;">
+                      <ion-icon name="md-clock" item-start></ion-icon>
+                  Sipariş Durumu: Beklemede
+                    </ion-card-content>
+          
+                </button>
+                </ion-card>
+
+                <ion-card class="urunler-card">
+                    <button mode="md" ion-item (click)="bekleyenClicked()">
+                      <ion-card-header class="text-h">
+                        Kürşat Coşkun
+                      </ion-card-header>
+                      <ion-card-content class="txt">
+                          <ion-icon name="md-book" item-start></ion-icon>
+                          Mehmet Osman Sk. 71/10<br>
+                          <ion-icon name="md-list-box" item-start></ion-icon>
+                          12 L Damacana Su X 1<br>
+                          <ion-icon color="seffaf" name="md-list-box" item-start></ion-icon>
+                          5 L Pet Şişe Su X 3<br>
+                          <ion-icon name="md-card" item-start></ion-icon>
+                         Ödeme Şekli:Kapıda  Ödeme<br>
+                         <ion-icon name="md-timer" item-start></ion-icon>
+                         Sipariş Tarihi: Hemen
+                      </ion-card-content>
+                      <ion-card-content style="color:red;">
+                          <ion-icon name="md-clock" item-start></ion-icon>
+                      Sipariş Durumu: Beklemede
+                        </ion-card-content>
+              
+                    </button>
+                    </ion-card>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'onaylanan'">
+            <ion-card class="urunler-card">
+                <button ion-item (click)="onaylananClicked()">
+                  <ion-card-header class="text-h">
+                    Kürşat Coşkun
+                  </ion-card-header>
+                  <ion-card-content class="txt">
+                      <ion-icon name="md-book" item-start></ion-icon>
+                      Mehmet Osman Sk. 71/10<br>
+                      <ion-icon name="md-card" item-start></ion-icon>
+                      12 L Damacana Su X 1<br>
+                      <ion-icon name="md-card" item-start></ion-icon>
+                     Ödeme Şekli:Kapıda  Ödeme
+                  </ion-card-content>
+                  <ion-card-content style="color: darkorange">
+                      <ion-icon name="md-clock" item-start></ion-icon>
+                  Sipariş Durumu: Onaylandı
+                    </ion-card-content>
+          
+                </button>
+                </ion-card>
+        </ion-list>
+
+
+        <ion-list *ngSwitchCase="'teslimedilen'">
+            <ion-card class="urunler-card">
+                <button mode="md" ion-item (clicked)="teslimClicked()">
+                  <ion-card-header class="text-h">
+                    Kürşat Coşkun
+                  </ion-card-header>
+                  <ion-card-content class="txt">
+                      <ion-icon name="md-book" item-start></ion-icon>
+                      Mehmet Osman Sk. 71/10<br>
+                      <ion-icon name="md-card" item-start></ion-icon>
+                      12 L Damacana Su X 1<br>
+                      <ion-icon name="md-card" item-start></ion-icon>
+                     Ödeme Şekli:Kapıda  Ödeme
+                  </ion-card-content>
+                  <ion-card-content style="color:green;">
+                      <ion-icon name="md-clock" item-start></ion-icon>
+                  Sipariş Durumu: Teslim Edildi
+                    </ion-card-content>
+          
+                </button>
+                </ion-card>
+        </ion-list>
+
+    </div>
 </ion-content>

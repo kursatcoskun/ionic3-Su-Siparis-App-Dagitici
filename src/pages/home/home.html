@@ -1,17 +1,47 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar class="navbar">
+    <ion-title class="textTitle">Anasayfa</ion-title>
+    
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="bgpage" padding>
+
+  <ion-card class="cardHome">
+    <ion-list>
+      <button color="turkuaz" mode="md" ion-item (click)="bekleyen()">
+        
+        <ion-card-header color="dark" style="text-align: center;">
+          <img class="icon" src="../../assets/imgs/clock.png">
+          Bekleyen: <span class="textPrg"> 18</span>
+          
+        </ion-card-header>
+       
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card class="cardHome2">
+    <ion-list>
+      <button color="turkuaz" mode="md" ion-item (click)="onaylanan()">
+        
+        <ion-card-header color="dark" style="text-align: center;">
+          <img class="icon" src="../../assets/imgs/delivery-truck.png">
+            Onaylanan: <span class="textPrg"> 25</span>
+          </ion-card-header>
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card class="cardHome2">
+    <ion-list>
+      <button color="turkuaz" mode="md" ion-item (click)="teslim()">
+        
+        <ion-card-header color="dark" style="text-align: center;">
+          <img class="icon" src="../../assets/imgs/delivery-man.png">
+            Teslim Edilen: <span class="textPrg"> 167</span>
+          </ion-card-header>
+      </button>
+    </ion-list>
+  </ion-card>
+
+  
 </ion-content>

@@ -1,3 +1,36 @@
 page-about {
+  
 
+    .textTitle{
+        text-align: center;
+    }
+    .urunler-card{
+
+        border-radius: 5%;
+      
+    }
+    .text-h{
+        text-align: center;
+        font-weight: bold;
+    }
+    .txt-content{
+        text-align: center;
+    }
+    .txtDurum{
+      
+        color: red;
+        font-weight: bold;
+    }
+    .bt{
+        background-color: white;
+    }
+
+ 
+}
+.siparisImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    max-height: 30%;
 }
